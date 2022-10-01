@@ -1,0 +1,30 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <!--  DB Driver  -->
+        <property name="connection.url">jdbc:postgresql://localhost/BankDB</property>
+        <!--  DB Name  -->
+        <property name="connection.username">postgres</property>                          <!--username-->
+        <!--  DB User  -->
+        <property name="connection.password">Aliii09124169320</property>                  <!--password-->
+        <!--  DB Password  -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <!--  DB Dialect  -->
+        <property name="hbm2ddl.auto">create</property>                                   <!--strategy-->
+        <!--  create / create-drop / update  -->
+        <property name="show_sql">true</property>
+        <!--  Show SQL in console  -->
+        <property name="format_sql">false</property>
+        <!--  Show SQL formatted  -->
+
+                                                                                        <!--mapping class-->
+        <mapping class="Q1.entity.BankAccount"/>
+
+
+
+
+
+
+
+    </session-factory>
+</hibernate-configuration>
